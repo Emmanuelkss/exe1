@@ -12,6 +12,7 @@ class TableauFixe {
 
 public:
     TableauFixe();
+    explicit TableauFixe(int n);
     TableauFixe(const TableauFixe& source);
     TableauFixe(TableauFixe&& source) noexcept;
     ~TableauFixe();
