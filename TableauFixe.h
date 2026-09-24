@@ -1,9 +1,5 @@
-//
-// Created by emman on 2026-09-17.
-//
-
-#ifndef EXE1_TABLEAUFIXE_H
-#define EXE1_TABLEAUFIXE_H
+#ifndef TABLEAUFIXE_H
+#define TABLEAUFIXE_H
 
 #include <stdexcept>
 
@@ -11,6 +7,7 @@ template <typename Element>
 class TableauFixe {
 
 public:
+
     TableauFixe();
     explicit TableauFixe(int n);
     TableauFixe(const TableauFixe& source);
@@ -44,6 +41,7 @@ public:
     TableauFixe<Element> sousEnsemble(int debut) const;
 
 private:
+
     Element* donnees;
     int n;
 
@@ -51,7 +49,6 @@ private:
 };
 
 
-// Implémentation
 
 template <typename Element>
 TableauFixe<Element>::TableauFixe() : TableauFixe(0) {
@@ -205,4 +202,4 @@ bool TableauFixe<Element>::indiceValide(int i) const {
     return i >= 0 && i < n;
 }
 
-#endif //EXE1_TABLEAUFIXE_H
+#endif //TABLEAUFIXE_H
